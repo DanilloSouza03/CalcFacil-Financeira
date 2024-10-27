@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/roi.js" defer></script>
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <title>ROI | CalcFácil</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="juros.html">Juros Simples</a></li>
+                <li><a href="juroscompostos.html">Juros Compostos</a></li>
+                <li><a href="roi.html">ROI</a></li>
+                <li><a href="paybacksimples.html">Payback Simples</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h1>Cálculo de ROI</h1>
+            <form id="roi-form">
+                <label for="investimento">Investimento:</label>
+                <input type="number" id="investimento" required>
+
+                <label for="lucro">Lucro:</label>
+                <input type="number" id="lucro" required>
+
+                <button type="submit">Calcular ROI</button>
+            </form>
+
+            <div id="resultado"></div>
+
+            <div id="explicacao">
+                <h3>O que é ROI (Retorno sobre o Investimento)?</h3>
+                <p>ROI, ou Retorno sobre o Investimento, é uma métrica usada para medir a eficiência de um investimento. Ele calcula o retorno gerado em relação ao valor investido. A fórmula para calcular o ROI é:</p>
+            
+                <p><strong>Fórmula:</strong> ROI = (Lucro Líquido / Custo do Investimento) * 100</p>
+            
+                <p>Onde:</p>
+                <ul>
+                    <li><strong>ROI</strong> = Retorno sobre o Investimento (em %)</li>
+                    <li><strong>Lucro Líquido</strong> = Lucro bruto - Custo</li>
+                    <li><strong>Custo do Investimento</strong> = Custo</li>
+                </ul>
+            
+                <h4>Exemplo Prático:</h4>
+                <p>Imagine que você investiu R$ 1.000,00 em uma campanha de marketing, e essa campanha gerou R$ 10.000,00 em vendas. O cálculo do ROI seria:</p>
+                
+                <p><strong>Lucro Líquido = R$ 10.000,00 - R$ 1.000,00 = R$ 9.000,00</strong></p>
+                
+                <p>Agora aplicamos a fórmula do ROI:</p>
+                
+                <p><strong>ROI = (9.000 / 1.000) * 100 = 900%</strong></p>
+            
+                <p>Portanto, o retorno sobre o investimento da campanha foi de 900%, ou seja, para cada R$ 1,00 investido, você gerou R$ 9,00 de lucro.</p>
+            </div>            
+        </main>
+    </div>
+</body>
+</html>

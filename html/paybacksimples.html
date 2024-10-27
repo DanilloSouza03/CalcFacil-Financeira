@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/payback.js" defer></script>
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <title>Payback Simples | CalcFácil</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="juros.html">Juros Simples</a></li>
+                <li><a href="juroscompostos.html">Juros Compostos</a></li>
+                <li><a href="roi.html">ROI</a></li>
+                <li><a href="paybacksimples.html">Payback Simples</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h1>Cálculo de Payback Simples</h1>
+            <form id="payback-form">
+                <label for="investimento">Investimento Inicial:</label>
+                <input type="number" id="investimento" required>
+
+                <label for="retorno-anual">Retorno Anual:</label>
+                <input type="number" id="retorno-anual" required>
+
+                <button type="submit">Calcular Payback</button>
+            </form>
+
+            <div id="resultado"></div>
+
+            <div id="explicacao">
+                <h3>O que é Payback Simples?</h3>
+                <p>Payback Simples é o tempo necessário para recuperar o valor investido em um projeto ou negócio. Em outras palavras, é o período que leva para que o lucro acumulado iguale o investimento inicial. A fórmula para calcular o Payback Simples é:</p>
+            
+                <p><strong>Fórmula:</strong> Payback Simples = Investimento Inicial / Lucro Anual</p>
+            
+                <p>Onde:</p>
+                <ul>
+                    <li><strong>Investimento Inicial</strong> = O valor total investido no início</li>
+                    <li><strong>Lucro Anual</strong> = O lucro obtido em um ano</li>
+                    <li><strong>Payback Simples</strong> = Tempo necessário para recuperar o investimento (em anos ou meses)</li>
+                </ul>
+            
+                <h4>Exemplo Prático:</h4>
+                <p>Imagine que um motorista de Uber comprou um carro por R$ 50.000,00 e, ao fazer viagens, ele consegue um lucro de R$ 2.500,00 por mês. O cálculo do Payback Simples seria:</p>
+                
+                <p><strong>Lucro Anual = R$ 2.500,00 * 12 = R$ 30.000,00 por ano</strong></p>
+                
+                <p>Agora aplicamos a fórmula do Payback Simples:</p>
+                
+                <p><strong>Payback Simples = R$ 50.000,00 / R$ 30.000,00 = 1,67 anos</strong></p>
+            
+                <p>Portanto, o motorista de Uber levaria aproximadamente 1 ano e 8 meses para recuperar o valor investido no carro.</p>
+            </div>            
+        </main>
+    </div>
+</body>
+</html>
